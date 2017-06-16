@@ -549,8 +549,8 @@ export default class Drawer extends Component {
   }
 
   render() {
-    let first = this.props.type === 'overlay' ? this.renderMain() : this.renderDrawer()
-    let second = this.props.type === 'overlay' ? this.renderDrawer() : this.renderMain()
+    let first = this.renderMain();
+    let second = this.renderDrawer();
 
     return (
       <View
